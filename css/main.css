@@ -1,0 +1,19 @@
+/* RESET */
+@import url("reset.css");
+
+/* BASE */
+@import url("base.css");
+
+/* LAYOUT */
+@import url("layout.css");
+
+/* HEADER / FOOTER */
+@import url("header.css");
+@import url("footer.css");
+
+/* COMPONENTES */
+@import url("button.css");
+@import url("card.css");
+@import url("content-icons.css");
+@import url("tooltip.css");
+@import url("form-filters.css");
