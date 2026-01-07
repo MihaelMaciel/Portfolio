@@ -52,17 +52,15 @@
                 <li><a href="index.html">Destinos</a></li>
                 <li><a href="como-funciona.html">Sobre nós</a></li>
                 <li><a href="para-campings.html">Para campings</a></li>
+                <li><a href="login.html">Entrar</a></li>
             </ul>
         </nav>
-
-        <div class="header-actions">
-            <a href="login.html" class="btn btn-outline">Entrar</a>
-        </div>
 
         <button class="menu-toggle" id="menuToggle">
             <span></span><span></span><span></span>
         </button>
     </div>
+
 </header>
 
 <main>
@@ -87,16 +85,20 @@
 
 </section>
 
-<!-- ================= CONTEÚDO ================= -->
+<!-- ================= CONTEÚDO PRINCIPAL ================= -->
 <section class="container container-section layout-with-sidebar camping-single">
 
     <div class="content-grid content-grid--split">
+
+        <!-- COLUNA PRINCIPAL -->
         <div class="layout-main">
 
+            <!-- IMAGEM DE CAPA -->
             <div class="page-cover">
-                <img src="images/rs.png" alt="Imagem do camping">
+                <img src="images/identidade/imagem-para-campings.webp" alt="Imagem do camping">
             </div>
 
+            <!-- DESCRIÇÃO -->
             <section class="camping-detalhes">
                 <div class="cabecalho-esquerda">
                     <h2>Camping Vale Azul</h2>
@@ -109,11 +111,22 @@
                     <span class="nota-texto">· Avaliado por 23 campistas</span>
                 </div>
 
-                <p>Localizado em meio à natureza exuberante de Novo Hamburgo, o Camping Vale Azul é ideal para quem busca tranquilidade e contato direto com a natureza.</p>
-                <p>O espaço oferece áreas amplas para barracas, pontos de apoio bem distribuídos e uma atmosfera silenciosa.</p>
-                <p>Perfeito para desacelerar e aproveitar momentos ao ar livre.</p>
+                <p>
+                    Localizado em meio à natureza exuberante de Novo Hamburgo, o Camping Vale Azul é ideal
+                    para quem busca tranquilidade, contato com a natureza e momentos de descanso longe da
+                    rotina urbana.
+                </p>
+                <p>
+                    O espaço mantém a essência do camping raiz, oferecendo áreas amplas para barracas,
+                    pontos de apoio bem distribuídos e uma atmosfera silenciosa.
+                </p>
+                <p>
+                    Seja para um fim de semana ou alguns dias de desconexão completa, o camping convida
+                    você a desacelerar.
+                </p>
             </section>
 
+            <!-- PERFEITO PARA VOCÊ -->
             <section class="camping-detalhes">
                 <div class="cabecalho-esquerda">
                     <h2>Perfeito para você</h2>
@@ -129,11 +142,16 @@
                 </ul>
             </section>
 
+            <!-- GALERIA -->
             <section class="camping-detalhes galeria">
-                <article class="card-destino"><img src="images/rs.png"></article>
-                <article class="card-destino"><img src="images/hero.png"></article>
-                <article class="card-destino"><img src="images/rs.png"></article>
-                <article class="card-destino"><img src="images/hero.png"></article>
+                <article class="card-destino"><img src="images/destinos/estados/rs.webp"></article>
+                <article class="card-destino"><img src="images/hero/hero-para-campings.webp"></article>
+                <article class="card-destino"><img src="images/destinos/estados/rs.webp"></article>
+                <article class="card-destino"><img src="images/hero/hero-como-funciona.webp"></article>
+                <article class="card-destino"><img src="images/destinos/estados/rs.webp"></article>
+                <article class="card-destino"><img src="images/hero/hero-para-campings.webp"></article>
+                <article class="card-destino"><img src="images/hero/hero-como-funciona.webp"></article>
+                <article class="card-destino"><img src="images/destinos/estados/rs.webp"></article>
             </section>
 
         </div>
@@ -142,27 +160,97 @@
     <!-- ================= SIDEBAR ================= -->
     <aside class="sidebar">
 
+        <!-- COMODIDADES -->
         <div class="sidebar-box">
             <div class="sidebar-block">
                 <h3>Comodidades</h3>
                 <span class="barra-inferior"></span>
+                <p class="info-ajuda">Toque nos ícones para ver os detalhes</p>
 
                 <div class="camping-comodidades">
-                    <span class="camping-comodidade tooltip" data-tooltip="Chuveiros"><i class="bi bi-droplet"></i></span>
-                    <span class="camping-comodidade tooltip" data-tooltip="Banheiros"><i class="bi bi-door-closed"></i></span>
-                    <span class="camping-comodidade tooltip" data-tooltip="Área verde"><i class="bi bi-tree"></i></span>
-                    <span class="camping-comodidade tooltip" data-tooltip="Fogueira"><i class="bi bi-fire"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Chuveiros com água quente"><i class="bi bi-droplet"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Banheiros disponíveis"><i class="bi bi-door-closed"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Área verde ampla"><i class="bi bi-tree"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Trilhas naturais próximas"><i class="bi bi-signpost"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Área para fogueira"><i class="bi bi-fire"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Espaço para barracas"><i class="bi bi-house"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Área familiar"><i class="bi bi-people"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Boa observação do céu noturno"><i class="bi bi-moon-stars"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Estacionamento no local"><i class="bi bi-car-front"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Acesso à água potável"><i class="bi bi-droplet"></i></span>
                 </div>
             </div>
         </div>
 
-        <div class="sidebar-box destaque-reserva" id="reserva">
-            <div class="sidebar-block campings">
-                <h3>Planeje sua aventura</h3>
+        <!-- AVISOS -->
+        <div class="sidebar-box">
+            <div class="sidebar-block">
+                <h3>Bom saber antes de ir</h3>
                 <span class="barra-inferior"></span>
 
-                <button class="btn">Reservar agora</button>
-                <p class="reserva-info">Você ainda não será cobrado</p>
+                <div class="camping-comodidades alertas">
+                    <span class="camping-comodidade tooltip" data-tooltip="Não aceita animais de estimação"><i class="bi bi-slash-circle"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Presença de animais silvestres"><i class="bi bi-bug"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Acesso difícil em dias de chuva"><i class="bi bi-cloud-rain-heavy"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Terreno irregular em algumas áreas"><i class="bi bi-exclamation-triangle"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Iluminação limitada à noite"><i class="bi bi-lightbulb-off"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Sinal de celular instável"><i class="bi bi-reception-0"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Barulho natural noturno"><i class="bi bi-volume-down"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Não indicado para veículos baixos"><i class="bi bi-truck"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOCALIZAÇÃO -->
+        <div class="sidebar-box">
+            <div class="sidebar-block">
+                <h3>Localização</h3>
+                <span class="barra-inferior"></span>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110912.08644770889!2d-51.20136941532641!3d-29.690701353764215"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- RESERVA -->
+        <div class="sidebar-box destaque-reserva" id="reserva">
+            <div class="sidebar-block campings">
+
+                <div>
+                    <h3>Planeje sua aventura</h3>
+                    <span class="barra-inferior"></span>
+                </div>
+
+                <div class="reserva-calendario">
+                    <input type="text" id="reserva-calendario">
+                </div>
+
+                <div class="reserva-calendario pessoas">
+                    <div class="price-input">
+                        <label for="adultos">Adultos</label>
+                        <input class="form-select" id="adultos" type="number" min="1" max="6" value="2">
+
+                        <label for="criancas">Crianças</label>
+                        <input class="form-select" id="criancas" type="number" min="0" max="6" value="0">
+                    </div>
+                </div>
+
+                <div class="reserva-calendario resumo">
+                    <div class="reserva-topo">
+                        <strong class="reserva-preco">R$218</strong>
+                        <span id="reserva-noites"></span>
+                    </div>
+
+                    <div class="reserva-periodo" id="reserva-periodo">
+                        Selecione as datas
+                    </div>
+
+                    <button class="btn">Reservar agora</button>
+                    <p class="reserva-info">Você ainda não será cobrado</p>
+                </div>
+
             </div>
         </div>
 
