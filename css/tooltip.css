@@ -1,0 +1,49 @@
+/* =========================================================
+   COMPONENT – TOOLTIP
+   Dica contextual exibida no hover / clique
+========================================================= */
+
+/*========== Estrutura ==========*/
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+/*========== Texto base do tooltip ==========*/
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1F5E5C;     
+    color: #fff;
+    font-size: 15px;
+    padding: 6px 8px;
+    border-radius: 8px 3px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    z-index: 10;
+}
+
+/*========== Hover (desktop) ==========*/
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+/*========== Clique / touch (mobile) ==========*/
+.tooltip.is-active::after {
+    opacity: 1;
+}
+
+/* =========================================================
+   VARIAÇÃO – ALERTAS
+   Bom saber antes de ir
+========================================================= */
+
+.camping-comodidades.alertas .tooltip::after {
+    background: #8C6A1F;          /* dourado escuro */
+    color: #fff;
+}

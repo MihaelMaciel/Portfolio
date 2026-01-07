@@ -1,0 +1,29 @@
+/* =========================================================
+   BASE / RESET
+   Reset global e estrutura mínima do documento
+========================================================= */
+
+/*========== Reset global ==========*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*========== Estrutura base do layout ==========*/
+main {
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Ajuste quando header fixo está ativo */
+.site-header.active + main {
+    margin-top: 123px;
+}

@@ -1,0 +1,121 @@
+/* =========================================================
+   SECTION – MEDIA + TEXT
+========================================================= */
+
+.section-media-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* =========================================================
+   MOSAICO DE IMAGENS 
+========================================================= */
+
+.section-media-text .media-images {
+    flex: 1 1 420px;
+    display: flex;
+    gap: 10px;
+}
+
+.section-media-text .media-image {
+    flex: 1 1 150px;
+    height: 500px;
+    display: flex;
+}
+
+.section-media-text .media-image.stack {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.section-media-text .media-image.stack img {
+    height: 50%;
+}
+
+.section-media-text .media-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    display: block;
+}
+
+
+/* =========================================================
+   CONTEÚDO
+========================================================= */
+
+.section-media-text .media-content {
+    flex: 1 1 420px;
+    max-width: 640px;
+}
+
+/* =========================================================
+   AVISO – DONOS DE CAMPING
+========================================================= */
+
+.aviso-camping-owner {
+    padding: 20px 0;
+}
+
+.aviso-camping-owner p {
+    background: rgba(31, 94, 92, 0.08);
+    border-left: 4px solid #1F5E5C;
+    padding: 14px 18px;
+    margin: 0;
+    font-size: 15px;
+    color: #1F5E5C;
+    border-radius: 8px;
+}
+
+.aviso-camping-owner strong {
+    font-weight: 600;
+}
+
+.aviso-camping-owner a {
+    color: #1F5E5C;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.aviso-camping-owner a:hover {
+    color: #C9A94D;
+}
+
+/* =========================================================
+   CTA FINAL – FECHAMENTO DA PÁGINA
+========================================================= */
+
+.cta-final {
+    background: #F4F8F7;
+    padding: 80px 0;
+}
+
+.cta-content {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #1F5E5C;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 18px;
+    color: #4F6F6D;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-content .btn {
+    font-size: 18px;
+    padding: 14px 28px;
+}

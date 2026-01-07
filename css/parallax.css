@@ -1,0 +1,87 @@
+/* =========================================================
+   SECTION – PARALLAX / MÉTRICAS
+========================================================= */
+
+/*========== Container principal ==========*/
+/* Área com background fixo e conteúdo centralizado */
+.parallax {
+    width: 100%;
+    padding: 60px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.parallax-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+}
+
+/*========== Box individual ==========*/
+/* Cada métrica / item */
+.parallax-box {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+/* Conteúdo interno */
+.parallax-box .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Número principal */
+.parallax-box h2 {
+    margin: 0;
+    font-size: 45px;
+}
+
+/* Texto secundário */
+.parallax-box h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/*========== Barra decorativa ==========*/
+.parallax-box .info .barra-inferior {
+    width: 80px;
+    height: 2px;
+    background: #C9A94D;
+    margin: 8px auto;
+}
+
+/*========== Ícone ==========*/
+.parallax-box i {
+    width: 80px;
+    height: 80px;
+    background: #1F5E5C;
+    border-radius: 20px 5px;
+    border-bottom: 4px solid #C9A94D;
+    border-right: 4px solid #C9A94D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+/*========== Tipografia auxiliar ==========*/
+.parallax-number {
+    font-size: 28px;
+    color: #C9A94D;
+}
+
+.parallax-title {
+    font-size: 16px;
+    opacity: .9;
+}

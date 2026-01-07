@@ -1,0 +1,28 @@
+.auth-footer {
+    margin-top: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: #666;
+}
+
+.auth-footer p {
+    margin-bottom: 8px;
+    color: #666;
+    font-weight: 500;
+}
+
+.auth-footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.auth-footer a {
+    color: #1F5E5C;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}

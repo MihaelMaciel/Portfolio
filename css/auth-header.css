@@ -1,0 +1,81 @@
+/* =========================
+   AUTH HEADER BASE
+========================= */
+
+.site-header.auth-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* =========================
+   ESTRUTURA INTERNA
+========================= */
+
+.site-header.auth-header .main-header {
+    height: 100%;
+}
+
+.site-header.auth-header .container {
+    height: 100%;
+}
+
+.site-header.auth-header .main-header-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.site-header.auth-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-header.auth-header .logo img {
+    height: 50px;
+    display: block;
+}
+
+/* =========================
+   NAV DIREITA
+========================= */
+
+.site-header.auth-header .auth-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-header.auth-header .auth-nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f5e5c;
+    text-decoration: none;
+}
+
+.site-header.auth-header .auth-nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 480px) {
+    .site-header.auth-header {
+        height: 64px;
+    }
+}

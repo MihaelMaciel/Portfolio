@@ -1,0 +1,101 @@
+/* =========================================================
+   COMPONENT – CARD (BASE)
+   Base visual compartilhada por todos os tipos de card
+========================================================= */
+
+/*========== Card base ==========*/
+/* Estrutura visual comum */
+.card {
+    background: #fff;
+    border-radius: 20px 5px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08),
+        0 4px 12px rgba(0,0,0,.05);
+}
+
+/* =========================================================
+   CARD DESTINO (ESTADOS / CIDADES)
+   Usado para navegação por locais
+========================================================= */
+
+/*========== Estrutura ==========*/
+.card-destino {
+    position: relative;
+    border-radius: 20px 5px;
+    overflow: hidden;
+    height: 350px;
+}
+
+/* Imagem */
+.card-destino img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .35s ease;
+    display: block;
+}
+
+.card-destino:hover img {
+    transform: scale(1.08);
+}
+
+/* Overlay */
+.card-destino-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    background: linear-gradient(
+        rgba(33,33,33,.15),
+        rgba(0,0,0,.55)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Badge */
+.card-destino-badge {
+    margin-left: auto;
+    background: #1F5E5C;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 15px 5px;
+    border-bottom: 5px solid #C9A94D;
+    border-right: 5px solid #C9A94D;
+}
+
+/* Card largo (grid) */
+.card-destino.is-wide {
+    grid-column: span 2;
+}
+
+/* Título */
+.card-destino-title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card-destino-title:hover {
+    color: #C9A94D;
+}
+
+/*========== Responsividade ==========*/
+@media (max-width: 768px) {
+    .card-destino {
+        height: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-destino {
+        height: 210px;
+    }
+
+    .card-destino-title {
+        font-size: 20px;
+    }
+}

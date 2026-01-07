@@ -1,0 +1,275 @@
+/* =========================================================
+   LAYOUT GLOBAL
+   Estruturas reutilizáveis de página e organização visual
+========================================================= */
+
+/* =========================================================
+   CONTAINERS
+========================================================= */
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-section {
+    padding: 40px 0;
+}
+
+/*  Regra estrutural global */
+
+/* =========================================================
+   CABEÇALHOS DE SEÇÃO
+========================================================= */
+
+.cabecalho {
+    padding-bottom: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #1F5E5C;
+}
+
+.cabecalho-esquerda {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: #1F5E5C;
+    margin: 0;
+}
+
+.cabecalho span {
+    color: #C9A94D;
+    font-size: 20px;
+}
+
+.cabecalho h2,
+.cabecalho-esquerda h2 {
+    color: #1F5E5C;
+    margin: 0;
+    font-size: 30px;
+}
+
+.barra-inferior {
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #C9A94D;
+    margin-bottom: 10px;
+}
+
+/* =========================================================
+   LAYOUTS ESTRUTURAIS
+========================================================= */
+
+.layout-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* =========================================================
+   SIDEBAR (ESTRUTURA + VISUAL)
+========================================================= */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-block {
+    background: #1F5E5C;
+    border-radius: 15px 4px;
+    padding: 20px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08),
+        0 4px 12px rgba(0,0,0,.05);
+    border-bottom: 4px solid #C9A94D;
+}
+
+.sidebar-item {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.sidebar-block .barra-inferior {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.sidebar-block .btn {
+    width: 100%;
+}
+
+.sidebar h3 {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.sidebar h4 {
+    color: #E6F2F1;
+    margin: 0;
+}
+
+.sidebar p {
+    color: #CFE3E2;
+    margin: 0;
+}
+
+.sidebar i {
+    color: #C9A94D;
+}
+
+/* =========================================================
+   PAGE DETAIL
+   Para Campings / Camping Single
+========================================================= */
+
+.page-detail .page-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Imagem de chamada */
+.page-cover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 6px;
+}
+
+.page-cover img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Conteúdo principal */
+.page-content {
+    max-width: 720px;
+}
+
+/* Galeria */
+.page-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* =========================================================
+   CONTENT GRID
+========================================================= */
+
+.content-grid {
+    display: grid;
+    gap: 25px;
+    width: 100%;
+}
+
+.content-grid--campings {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content-grid--destinos {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* =========================================================
+   HEADER DE RESULTADOS
+========================================================= */
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px 4px;
+    padding: 12px 16px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08),
+        0 4px 12px rgba(0,0,0,.05);
+}
+
+.results-info {
+    font-size: 15px;
+    color: #666;
+}
+
+/* =========================================================
+   RESPONSIVIDADE GLOBAL
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .layout-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .content-grid--campings,
+    .content-grid--destinos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-campings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+
+    .grid-destinos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-grid--campings,
+    .content-grid--destinos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-cover img {
+        height: 300px;
+    }
+
+    .page-content {
+        max-width: 100%;
+    }
+
+    .page-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .grid-destinos,
+    .grid-campings,
+    .content-grid--campings,
+    .content-grid--destinos,
+    .page-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .page-cover img {
+        height: 220px;
+    }
+}

@@ -1,0 +1,30 @@
+/* =========================================================
+   COMPONENT – CONTENT ICONS
+========================================================= */
+
+.conteudo-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.conteudo-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo-icons li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #1F5E5C;
+    margin-bottom: 12px;
+}
+
+.conteudo-icons i {
+    font-size: 18px;
+    color: #C9A94D;
+}
