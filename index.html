@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Projeto Front-end – Portfólio</title>
+    <title>Campin — Plataforma de Campings | Projeto Front-end</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS BASE -->
@@ -21,13 +21,13 @@
 
     <div class="top-header">
         <div class="top-header-container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Plataforma de reservas e gestão para campings no Brasil
         </div>
     </div>
 
     <div class="header-container">
         <a href="index.html" class="header-logo">
-            <img src="images/logo.svg" alt="Logo">
+            <img src="images/logo.svg" alt="Campin">
         </a>
 
         <nav class="header-nav">
@@ -40,7 +40,7 @@
         </nav>
 
         <div class="header-actions">
-            <a href="login.html" class="btn btn-outline">Entrar</a>
+            <a href="#" class="btn btn-outline">Entrar</a>
         </div>
 
         <button class="menu-toggle" id="menuToggle">
@@ -56,7 +56,7 @@
             <li><a href="cidades.html">Cidades</a></li>
             <li><a href="campings.html">Campings</a></li>
             <li><a href="como-funciona.html">Como funciona</a></li>
-            <li><a href="login.html">Entrar</a></li>
+            <li><a href="#">Entrar</a></li>
         </ul>
     </nav>
 </header>
@@ -67,50 +67,83 @@
 <section class="hero"
     style="background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('images/hero.webp');">
 
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="index.html" class="breadcrumb-link">Início</a>
+        <i class="bi bi-chevron-right"></i>
+        <span class="page">Estados</span>
+    </nav>
+
     <div class="page-description">
-        <h1>Lorem Ipsum<br><span class="destaque">Dolor Sit</span></h1>
+        <h1>Escolha campings pelo<br><span class="destaque">Brasil.</span></h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Encontre campings organizados por estado e cidade.
+            Planeje sua próxima aventura ao ar livre de forma simples e segura.
         </p>
     </div>
 
 </section>
 
-<!-- ================= CONTEÚDO ================= -->
-<section class="container container-section">
+<!-- ================= ESTADOS ================= -->
+<section class="container container-section estados">
 
     <div class="cabecalho">
-        <span>Lorem Ipsum</span>
-        <h2>Estados disponíveis</h2>
-        <span class="barra-inferior"></span>
+        <span>Descubra destinos para acampar</span>
+        <h2>Escolha um estado e comece sua jornada</h2>
     </div>
 
     <div class="content-grid content-grid--destinos">
 
-        <!-- CARD -->
-        <article class="card card-destino">
-            <img src="images/estado.webp" alt="">
-            <h3>Lorem Ipsum</h3>
+        <article class="card-destino is-wide">
+            <a href="#">
+                <img src="images/estado.webp" alt="Campings no Rio Grande do Sul">
+                <div class="card-destino-overlay">
+                    <span class="card-destino-badge">24 campings</span>
+                    <h3 class="card-destino-title">Rio Grande do Sul</h3>
+                </div>
+            </a>
         </article>
 
-        <article class="card card-destino">
-            <img src="images/estado.webp" alt="">
-            <h3>Lorem Ipsum</h3>
+        <article class="card-destino">
+            <a href="#">
+                <img src="images/estado.webp" alt="Campings em Santa Catarina">
+                <div class="card-destino-overlay">
+                    <span class="card-destino-badge">18 campings</span>
+                    <h3 class="card-destino-title">Santa Catarina</h3>
+                </div>
+            </a>
         </article>
 
-        <article class="card card-destino">
-            <img src="images/estado.webp" alt="">
-            <h3>Lorem Ipsum</h3>
+        <article class="card-destino">
+            <a href="#">
+                <img src="images/estado.webp" alt="Campings no Paraná">
+                <div class="card-destino-overlay">
+                    <span class="card-destino-badge">15 campings</span>
+                    <h3 class="card-destino-title">Paraná</h3>
+                </div>
+            </a>
         </article>
 
-        <article class="card card-destino">
-            <img src="images/estado.webp" alt="">
-            <h3>Lorem Ipsum</h3>
+        <article class="card-destino">
+            <a href="#">
+                <img src="images/estado.webp" alt="Campings em São Paulo">
+                <div class="card-destino-overlay">
+                    <span class="card-destino-badge">22 campings</span>
+                    <h3 class="card-destino-title">São Paulo</h3>
+                </div>
+            </a>
+        </article>
+
+        <article class="card-destino is-wide">
+            <a href="#">
+                <img src="images/estado.webp" alt="Campings em Minas Gerais">
+                <div class="card-destino-overlay">
+                    <span class="card-destino-badge">19 campings</span>
+                    <h3 class="card-destino-title">Minas Gerais</h3>
+                </div>
+            </a>
         </article>
 
     </div>
-
 </section>
 
 </main>
@@ -123,38 +156,37 @@
         <div class="footer-brand">
             <a href="#" class="footer-logo">
                 <img src="images/logo.svg" alt="">
-                <span>Projeto</span>
+                <span>Campin</span>
             </a>
 
             <p class="footer-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                Campin é uma plataforma digital para descoberta, reserva e gestão
+                de campings, conectando viajantes a experiências ao ar livre.
             </p>
         </div>
 
         <div class="footer-column">
-            <h4>Lorem</h4>
+            <h4>Explorar</h4>
             <ul>
-                <li><a href="#">Lorem Ipsum</a></li>
-                <li><a href="#">Dolor Sit</a></li>
-                <li><a href="#">Amet</a></li>
+                <li><a href="#">Estados</a></li>
+                <li><a href="#">Cidades</a></li>
+                <li><a href="#">Campings</a></li>
             </ul>
         </div>
 
         <div class="footer-column">
-            <h4>Ipsum</h4>
+            <h4>Plataforma</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Dolor</a></li>
-                <li><a href="#">Sit</a></li>
+                <li><a href="#">Como funciona</a></li>
+                <li><a href="#">Para campings</a></li>
             </ul>
         </div>
 
         <div class="footer-column">
-            <h4>Amet</h4>
+            <h4>Projeto</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">GitHub</a></li>
             </ul>
         </div>
 
@@ -164,12 +196,11 @@
 
     <div class="footer-bottom">
         <span>© 2026 — Projeto de Portfólio</span>
-        <a href="#">Lorem Ipsum</a>
+        <a href="#">Campin</a>
     </div>
 
 </footer>
 
-<!-- JS -->
 <script src="js/main.js"></script>
 
 </body>
