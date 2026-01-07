@@ -237,19 +237,31 @@
             <div class="sidebar-block">
                 <h3 class="cabecalho-esquerda">Faixa de valor</h3>
                 <span class="barra-inferior"></span>
-
+            
+                <div class="price-range">
+            
+                    <div class="slider-track">
+                        <div class="slider-range"></div>
+                    </div>
+            
+                    <div class="range-input">
+                        <input type="range" id="range-min" min="0" max="500" step="10" value="0">
+                        <input type="range" id="range-max" min="0" max="500" step="10" value="500">
+                    </div>
+            
+                </div>
+            
                 <div class="price-values">
                     <div class="price-input">
                         <label>Mín:</label>
-                        <input type="number" value="0">
+                        <input type="number" id="min-price" value="0">
                     </div>
                     <div class="price-input">
                         <label>Máx:</label>
-                        <input type="number" value="500">
+                        <input type="number" id="max-price" value="500">
                     </div>
                 </div>
             </div>
-
         </div>
     </aside>
 
