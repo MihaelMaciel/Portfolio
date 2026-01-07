@@ -2,93 +2,230 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Projeto Front-end – Detalhes</title>
+    <title>Campin — Camping Vale Azul</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS BASE -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
+
+    <!-- HEADER / FOOTER -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <!-- COMPONENTES -->
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/content-icons.css">
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/media-text.css">
+
+    <!-- CAMPING SINGLE -->
     <link rel="stylesheet" href="css/camping-single.css">
+    <link rel="stylesheet" href="css/main-camping-single.css">
+
+    <!-- BOTÕES -->
+    <link rel="stylesheet" href="css/button.css">
+
+    <!-- ÍCONES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="site-header" id="siteHeader">
+
+    <div class="top-header">
+        <div class="top-header-container">
+            Plataforma de reservas e gestão para campings no Brasil
+        </div>
+    </div>
+
     <div class="header-container">
-        <a href="index.html" class="header-logo">Projeto</a>
+        <a href="index.html" class="header-logo">
+            <img src="images/Logo.png" alt="Campin">
+        </a>
 
         <nav class="header-nav">
             <ul>
-                <li><a href="index.html">Estados</a></li>
-                <li><a href="cidades.html">Cidades</a></li>
                 <li><a href="campings.html">Campings</a></li>
-                <li><a href="como-funciona.html">Como funciona</a></li>
+                <li><a href="index.html">Destinos</a></li>
+                <li><a href="como-funciona.html">Sobre nós</a></li>
+                <li><a href="para-campings.html">Para campings</a></li>
             </ul>
         </nav>
 
         <div class="header-actions">
             <a href="login.html" class="btn btn-outline">Entrar</a>
         </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </header>
 
 <main>
 
+<!-- ================= HERO ================= -->
 <section class="hero"
-    style="background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('images/hero.webp');">
+    style="background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('images/hero.png');">
+
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="index.html" class="breadcrumb-link">Destinos</a>
+        <i class="bi bi-chevron-right"></i>
+        <span class="page">Novo Hamburgo</span>
+    </nav>
 
     <div class="page-description">
-        <h1>Lorem Ipsum<br><span class="destaque">Detalhes</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h1>Camping <br><span class="destaque">Vale Azul</span></h1>
+        <p>Novo Hamburgo, RS</p>
+        <button class="btn" onclick="document.getElementById('reserva').scrollIntoView({ behavior: 'smooth' })">
+            Selecionar datas
+        </button>
     </div>
 
 </section>
 
-<section class="container container-section layout-with-sidebar">
+<!-- ================= CONTEÚDO ================= -->
+<section class="container container-section layout-with-sidebar camping-single">
 
-    <div class="layout-main">
+    <div class="content-grid content-grid--split">
+        <div class="layout-main">
 
-        <div class="page-cover">
-            <img src="images/camping.webp" alt="">
+            <div class="page-cover">
+                <img src="images/rs.png" alt="Imagem do camping">
+            </div>
+
+            <section class="camping-detalhes">
+                <div class="cabecalho-esquerda">
+                    <h2>Camping Vale Azul</h2>
+                    <span class="barra-inferior"></span>
+                </div>
+
+                <div class="camping-nota">
+                    <i class="bi bi-star-fill"></i>
+                    <span class="nota-valor">4,8</span>
+                    <span class="nota-texto">· Avaliado por 23 campistas</span>
+                </div>
+
+                <p>Localizado em meio à natureza exuberante de Novo Hamburgo, o Camping Vale Azul é ideal para quem busca tranquilidade e contato direto com a natureza.</p>
+                <p>O espaço oferece áreas amplas para barracas, pontos de apoio bem distribuídos e uma atmosfera silenciosa.</p>
+                <p>Perfeito para desacelerar e aproveitar momentos ao ar livre.</p>
+            </section>
+
+            <section class="camping-detalhes">
+                <div class="cabecalho-esquerda">
+                    <h2>Perfeito para você</h2>
+                    <span class="barra-inferior"></span>
+                </div>
+
+                <ul class="destaques-lista">
+                    <li><i class="bi bi-tree"></i><span>Ambiente tranquilo</span></li>
+                    <li><i class="bi bi-fire"></i><span>Camping raiz</span></li>
+                    <li><i class="bi bi-signpost"></i><span>Trilhas naturais</span></li>
+                    <li><i class="bi bi-people"></i><span>Ideal para famílias</span></li>
+                    <li><i class="bi bi-moon-stars"></i><span>Descanso e desconexão</span></li>
+                </ul>
+            </section>
+
+            <section class="camping-detalhes galeria">
+                <article class="card-destino"><img src="images/rs.png"></article>
+                <article class="card-destino"><img src="images/hero.png"></article>
+                <article class="card-destino"><img src="images/rs.png"></article>
+                <article class="card-destino"><img src="images/hero.png"></article>
+            </section>
+
         </div>
-
-        <section class="camping-detalhes">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
-        </section>
-
-        <section class="camping-detalhes">
-            <h2>Lorem Ipsum</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Consectetur adipiscing elit</li>
-                <li>Sed do eiusmod tempor</li>
-            </ul>
-        </section>
-
     </div>
 
+    <!-- ================= SIDEBAR ================= -->
     <aside class="sidebar">
-        <div class="sidebar-block">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <button class="btn">Reservar agora</button>
+
+        <div class="sidebar-box">
+            <div class="sidebar-block">
+                <h3>Comodidades</h3>
+                <span class="barra-inferior"></span>
+
+                <div class="camping-comodidades">
+                    <span class="camping-comodidade tooltip" data-tooltip="Chuveiros"><i class="bi bi-droplet"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Banheiros"><i class="bi bi-door-closed"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Área verde"><i class="bi bi-tree"></i></span>
+                    <span class="camping-comodidade tooltip" data-tooltip="Fogueira"><i class="bi bi-fire"></i></span>
+                </div>
+            </div>
         </div>
+
+        <div class="sidebar-box destaque-reserva" id="reserva">
+            <div class="sidebar-block campings">
+                <h3>Planeje sua aventura</h3>
+                <span class="barra-inferior"></span>
+
+                <button class="btn">Reservar agora</button>
+                <p class="reserva-info">Você ainda não será cobrado</p>
+            </div>
+        </div>
+
     </aside>
 
 </section>
 
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="#" class="footer-logo">
+                <img src="images/Logo.png" alt="">
+                <span>Campin</span>
+            </a>
+
+            <p class="footer-description">
+                Campin é uma plataforma digital para descoberta, reserva e gestão
+                de campings, conectando viajantes a experiências ao ar livre.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Explorar</h4>
+            <ul>
+                <li><a href="#">Estados</a></li>
+                <li><a href="#">Cidades</a></li>
+                <li><a href="#">Campings</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Plataforma</h4>
+            <ul>
+                <li><a href="#">Como funciona</a></li>
+                <li><a href="#">Para campings</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Projeto</h4>
+            <ul>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
     <div class="footer-bottom">
         <span>© 2026 — Projeto de Portfólio</span>
+        <a href="#">Campin</a>
     </div>
+
 </footer>
 
 <script src="js/main.js"></script>
+
 </body>
 </html>
